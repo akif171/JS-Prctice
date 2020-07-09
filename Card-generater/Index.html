@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Javascript</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>FORM</h1>
+
+    
+      <table>
+       
+          <td>NAME:</td>
+          <td>
+            <input type="text" id="name">
+          </td>
+        </tr>
+        <tr>
+          <td>FATHER NAME:</td>
+          <td>
+            <input type="text" id="father_name">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Class:
+          </td>
+          <td>
+            <input type="text" id="class">
+          </td>
+          <tr>
+            <td>
+              Address:
+            </td>
+            <td>
+              <input type="text" id="address">
+            </td>
+          </tr>
+        </tr>
+        <tr>
+          <td>Upload Photo:</td>
+          <td>
+            <input type="file" id="photo" accept=".jpg,.jpeg,.png">
+          </td>
+        </tr>
+      </table>
+          <button class="submit" onclick="Card()">Submit</button>
+     
+
+
+
+
+
+
+
+  </div>
+
+  <div class="container">
+        
+    <h1>Id Card</h1>
+
+    <img src="" alt="" id="image">
+    
+    <table>
+        <tr>
+            <td>
+            Name :
+        </td>
+        <td id="name_c">
+        
+        </td> 
+        </tr>
+        <tr>
+            <td>
+                Father Name :
+            </td>
+            <td id="father_name_c">
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Class :
+            </td>
+            <td id="class_c">
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Address :                    
+            </td>
+            <td id="address_c">
+
+            </td>
+        </tr>
+
+    </table>
+
+
+</div>
+
+
+
+
+<script >
+
+function Card(){
+
+var inp = document.getElementById("name").value;
+var rend = document.getElementById("name_c").innerHTML=inp;
+
+
+var inp = document.getElementById("father_name").value;
+var rend = document.getElementById("father_name_c").innerHTML=inp;
+
+
+var inp = document.getElementById("class").value;
+var rend = document.getElementById("class_c").innerHTML=inp;
+
+
+var inp = document.getElementById("address").value;
+var rend = document.getElementById("address_c").innerHTML=inp;
+
+
+var inp = document.getElementById("photo").value;
+var rend = document.getElementById("image").getAttribute('src',inp);
+
+}
+
+</script>
+
+
+
+
+</body>
+
+</html>
