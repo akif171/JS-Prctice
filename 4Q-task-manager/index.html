@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <title>4Q Task manager</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-heading">Task manager using 4Q technique</h1>
+
+      <div class="inp-field">
+        <input type="text" placeholder="Enter your task" id="inp" />
+        <select name="" id="Q-selector">
+          <option >Select Q</option>
+          <option value="Urg & Imp">Urg & Imp</option>
+          <option value="Important">Important</option>
+          <option value="Urgent">Urgent</option>
+          <option value="No Urg & No Imp">No Urg & No Imp</option>
+        </select>
+
+        <button disabled type="submit" class="btn">Add Task</button>
+      </div>
+
+      <div class="seprated-lists">
+        <div id="urg-imp-list" class="task-box">
+          <h3 class="task-heading urg-imp">urgent & important tasks</h3>
+          <ul class="tasks-list items-ul">
+          
+          </ul>
+        </div>
+        <div id="imp-list" class="task-box">
+          <h3 class="task-heading imp">important tasks</h3>
+          <ul class="tasks-list items-ul">
+           
+          </ul>
+        </div>
+        <div id="urg-list" class="task-box">
+          <h3 class="task-heading urg">urgent tasks</h3>
+          <ul class="tasks-list items-ul">
+           
+          </ul>
+        </div>
+        <div id="no-urg-imp-list" class="task-box">
+          <h3 class="task-heading no-urg-imp">not urgent & not important tasks</h3>
+          <ul class="tasks-list items-ul">
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
