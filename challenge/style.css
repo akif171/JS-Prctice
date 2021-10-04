@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;800&family=Nunito:wght@200;300;400;600;800&display=swap");
+
+* {
+  font-family: "Nunito ", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  transition: 0.2s linear;
+  scroll-behavior: smooth;
+  list-style: none;
+  color: black;
+}
+
+/* html{
+    font-size: 62.5%;
+} */
+
+:root {
+  --brown: #d9bf77;
+  --gray: #6c757d;
+  --light: #f7f7f7;
+}
+
+section  {
+
+  min-height: 100vh;
+}
+
+.header {
+  padding: 20px 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  /* padding: 2rem 7%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); */
+  /* background: #fff; */
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.logo span {
+  font-size: 11px;
+  letter-spacing: 1px;
+  display: block;
+  font-weight: 700;
+  color: #d9bf77;
+  text-transform: uppercase;
+}
+
+.logo small {
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #d9bf77;
+    text-transform: uppercase;
+  }
+
+ul.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-items {
+  margin: 0 5px;
+}
+
+.links-items a {
+  margin: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.links-items a:hover {
+  color: var(--brown);
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  background-image: url("./images/slider.jpg");
+  background-size: cover;
+  background-position: center;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.342);
+  padding: 0 7%;
+  padding-top: 7.5rem;
+  padding-bottom: 3rem;
+  min-height: 100vh;
+}
+
+.home .content-sec{
+    position: absolute;
+    width: 50%;
+    background: black;
+    opacity: .6;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.num-btn{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    left: 40px;
+
+
+
+}
+
+.num-btn a{
+    color: var(--gray);
+    font-size: 30px;
+    font-weight: 600;
+    margin: 12px 0px;
+
+}
+
+.home .content{
+ 
+    padding-left: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 60%;
+
+
+}
+
+.home .content h1{
+    font-size: 58px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+    /* margin-bottom: 40px;  */
+
+
+}
+
+.home .content p{
+    color: #fff;
+    line-height: 2;
+
+}
+
+.btn{
+
+    padding: 1rem 3rem;
+    cursor: pointer;   
+    
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #d9bf77 ;
+    border: 1px solid #d9bf77 ;
+    color: #000000 ;
+
+
+
+}
+
+.btn i{
+
+margin-left: 10px;
+
+}
+
+.about {
+
+    display: flex;
+  align-items: center;
+  background-image: url("./images/work-space.jpg");
+  background-size: cover;
+  background-position: center;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.342);
+  /* padding: 0 7%;
+  padding-top: 7.5rem;
+  padding-bottom: 3rem; */
+  min-height: 100vh;
+  
+}
+
+
+.about .content{
+    width: 50%;
+    padding: 80px 40px 80px 80px;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    background: #fff;
+}
+
+.about h3{
+    color: var(--brown);
+
+}
+
+.about h1{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.4;    
+margin-top: 10px;
+}
+
+.about p{
+    margin-top: 15px;
+    line-height: 2;
+
+}
+
+.about .btn{
+    margin-top: 20px;
+}
+
+.about .image img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.counter {
+    background-image: url("./images/slider.jpg");
+    position: relative;
+    z-index: 0;
+    background-attachment: fixed;
+    background-size: cover;
+  background-position: center;
+  flex-wrap: wrap;
+}
+
+.content .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    z-index: -1;
+    opacity: .8;
+    background: #000000;
+}
+
+.img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
